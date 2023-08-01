@@ -1,0 +1,41 @@
+body {
+	font-size: 50px;
+	background-color: #007eff;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding: 30px 0px 0px 45px;
+}
+button {
+	padding: 20px 25px 20px 25px;
+	font-size: 50px;
+	font-weight: bold;
+	font-variant: small-caps;
+	border-top: 8px solid lightgrey;
+	border-left: 8px solid lightgrey;
+	border-bottom: 8px solid grey;
+	border-right: 8px solid grey;
+	background-color: orange;
+}
+input {
+	padding: 20px 25px 20px 25px;
+	font-size: 20px;
+	border-radius: 20px;
+	border: 3px solid white;
+}
+input:focus {
+	border: 3px solid blue;
+}
+#question {
+	padding-left: 35px;
+}
+#score:hover {
+	animation-name: shiny;
+	animation-duration: 0.35s;
+}
+@keyframes shiny {
+	0% {background-image: linear-gradient(to bottom right, gold, #007eff, #007eff, #007eff, #007eff)}
+	25% {background-image: linear-gradient(to bottom right, #007eff, gold, #007eff, #007eff, #007eff)}
+	50% {background-image: linear-gradient(to bottom right, #007eff, #007eff, gold, #007eff, #007eff)}
+	75% {background-image: linear-gradient(to bottom right, #007eff, #007eff, #007eff, gold, #007eff)}
+	100% {background-image: linear-gradient(to bottom right, #007eff, #007eff, #007eff, #007eff, gold)}
+}

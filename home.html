@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="main.css">
+<link rel="shortcut icon" href="other/logo.png">
+</head>
+<body>
+<br>
+<a href='addition.html'><button>Addition</button></a>
+<a href='subtraction.html'><button>Subtraction</button></a>
+<a href='multiplication.html'><button>Multiplication</button></a>
+<a href='division.html'><button>Division</button></a><br><br>
+<a id='score'></a>
+<script>
+if (Boolean(localStorage.Score)==false){localStorage.Score = 0}
+document.getElementById('score').innerHTML = 'Score: '+localStorage.getItem("Score")
+</script>
+</body>
+</html>

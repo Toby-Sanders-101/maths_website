@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Addition</title>
+<link rel="shortcut icon" href="other/logo.png">
+<script src='main.js'></script>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<p id='question'></p>
+<input id='ans' placeholder='Answer' autofocus>
+<button onclick="submit()" id="submit">Submit</button>
+<button id='next' hidden onclick='next()'>Next</button>
+<a href='home.html'><button>Home</button></a>
+<p id='result'></p>
+<p id='answer' hidden>0</p>
+<script>
+num5 = num3+num4
+document.getElementById('question').innerHTML = num5+' - '+num4+' = '
+document.getElementById('answer').innerHTML = num3
+</script>
+</body>
+</html>
